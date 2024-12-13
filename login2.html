@@ -1,0 +1,198 @@
+/* styles.css */
+/*  changed background image of login page. "This file is updated version of login.html" */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center fixed; */
+    /* background: url('https://plus.unsplash.com/premium_vector-1725729871697-2c619a143726?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed; */
+    background: url('https://plus.unsplash.com/premium_vector-1697729780111-058eea198643?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZSUyMHdhdGVyfGVufDB8fDB8fHww') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.login-header {
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+.login-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group label {
+    color: #666;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.input-wrapper i {
+    margin-right: 10px;
+    color: #aaa;
+}
+
+input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+}
+
+.toggle-password {
+    cursor: pointer;
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7e5f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+}
+
+.forgot-password {
+    margin-top: 10px;
+    display: block;
+    color: #ff7e5f;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #feb47b;
+}
+
+.remember-me {
+    display: block;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-me input {
+    margin-right: 10px;
+    align-items: center;
+}
+
+.social-login {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-login p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Twitter {
+    background-color: #1694ce;
+}
+
+.Twitter:hover {
+    background-color: #1694ce;
+    transform: scale(1.05);
+}
+
+.Instagram {
+    background-color: #ce30b7;
+}
+
+.Instagram:hover {
+    background-color: #ce30b7;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+input:focus {
+    border-color: #ff7e5f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+@media (max-width: 500px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button, .social-btn {
+        font-size: 14px;
+    }
+}
